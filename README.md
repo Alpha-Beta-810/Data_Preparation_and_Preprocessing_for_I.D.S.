@@ -123,6 +123,8 @@ MinMaxScaler
 0 → 1
 ---
 
+---
+
 This is especially beneficial for SVM.
 
 **7. Class Balancing**
