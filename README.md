@@ -38,10 +38,13 @@ The system preprocesses raw network data, handles class imbalance using **SMOTE*
 ## 🧠 Machine Learning Pipeline
 
 **1. Dataset Loading**
-Uses NSL-KDD 20% dataset
-Reads data using Pandas
 
-```Python
+Uses NSL-KDD 20% dataset  
+Reads data using **Pandas**
+
+***Python***
+
+```python
 pd.read_csv("KDDTrain+_20Percent.txt")
 ```
 
