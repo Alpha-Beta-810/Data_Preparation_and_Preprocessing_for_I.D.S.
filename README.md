@@ -35,11 +35,7 @@ The system preprocesses raw network data, handles class imbalance using **SMOTE*
 - 🚀 Clean and beginner-friendly implementation
 - 💻 Built entirely in Python
 
----
-
 ## 🧠 Machine Learning Pipeline
-
-```
 
 **1. Dataset Loading**
 Uses NSL-KDD 20% dataset
@@ -49,8 +45,6 @@ Reads data using Pandas
 
 **Python**
 pd.read_csv("KDDTrain+_20Percent.txt")
-
----
 
 **2. Feature Engineering**
 
@@ -70,9 +64,97 @@ Then removes:
 
 ```
 difficulty
-```
 
 since it isn't needed for prediction.
+
+**3. Data Cleaning**
+
+Performs:
+
+• Duplicate removal
+• Missing value removal
+
+```
+drop_duplicates()
+dropna()
+
+**4. Encoding**
+
+Uses LabelEncoder for:
+
+• protocol_type
+• service
+• flag
+
+Also converts attack labels into numeric classes.
+
+**5. Rare Class Removal**
+
+Very small classes (<6 samples) are removed before SMOTE.
+
+Reason:
+
+SMOTE cannot generate synthetic samples if a class has too few observations.
+
+**6. Normalization**
+
+Uses
+---
+MinMaxScaler
+
+which scales every feature into
+---
+0 → 1
+
+This is especially beneficial for SVM.
+
+**7. Class Balancing**
+
+Uses
+
+---
+
+**Python**
+SMOTE(random_state=42)
+
+Advantages:
+
+• Balances minority attacks
+• Prevents model bias
+• Improves Recall
+
+**8. Train-Test Split**
+
+---
+
+70% Training
+30% Testing
+
+**9. Models Used**
+
+**Logistic Regression**
+
+Pros:
+
+•Fast
+•Interpretable
+•Good baseline
+
+**Decision Tree**
+
+Pros:
+
+• Handles nonlinear patterns
+• Easy visualization
+• Little preprocessing required
+
+**Support Vector Machine (SVM)**
+
+Pros:
+
+• High accuracy
+• Strong for complex boundaries
+• Works well after scaling
 
 ## 📂 Project Structure
 
@@ -190,6 +272,13 @@ The models are evaluated using:
 - ⚖️ F1-Score
 
 These metrics help compare the effectiveness of each classifier in detecting network intrusions.
+
+with
+
+---
+average="macro"
+
+which treats every attack class equally.
 
 ---
 
