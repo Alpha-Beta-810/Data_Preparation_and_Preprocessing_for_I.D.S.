@@ -79,6 +79,7 @@ Performs:
 ```
 drop_duplicates()
 dropna()
+```
 
 **4. Encoding**
 
