@@ -41,6 +41,7 @@ The system preprocesses raw network data, handles class imbalance using **SMOTE*
 Uses NSL-KDD 20% dataset
 Reads data using Pandas
 
+```
 **Python**
 pd.read_csv("KDDTrain+_20Percent.txt")
 ```
