@@ -73,6 +73,8 @@ difficulty
 
 since it isn't needed for prediction.
 
+---
+
 **3. Data Cleaning**
 
 Performs:
