@@ -85,9 +85,9 @@ dropna()
 
 Uses LabelEncoder for:
 
-• protocol_type
-• service
-• flag
+• protocol_type \n
+• service \n
+• flag \n
 
 Also converts attack labels into numeric classes.
 
