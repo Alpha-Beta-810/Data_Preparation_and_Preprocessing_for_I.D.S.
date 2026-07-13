@@ -39,7 +39,7 @@ The system preprocesses raw network data, handles class imbalance using **SMOTE*
 
 **1. Dataset Loading**
 
-Uses NSL-KDD 20% dataset  
+Uses **NSL-KDD 20% dataset**  
 Reads data using **Pandas**
 
 ```python
@@ -49,7 +49,7 @@ pd.read_csv("KDDTrain+_20Percent.txt")
 
 **2. Feature Engineering**
 
-The code manually assigns all 43 feature names, including:
+The code manually assigns all **43 feature names**, including:
 
 • duration
 • protocol_type
@@ -83,7 +83,7 @@ dropna()
 
 **4. Encoding**
 
-Uses LabelEncoder for:
+Uses **LabelEncoder** for:
 
 • protocol_type  
 • service  
