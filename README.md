@@ -87,6 +87,8 @@ drop_duplicates()
 dropna()
 ```
 
+---
+
 **4. Encoding**
 
 Uses **LabelEncoder** for:
