@@ -99,6 +99,8 @@ Uses **LabelEncoder** for:
 
 Also converts attack labels into numeric classes.
 
+---
+
 **5. Rare Class Removal**
 
 Very small classes (<6 samples) are removed before SMOTE.
@@ -107,15 +109,19 @@ Reason:
 
 SMOTE cannot generate synthetic samples if a class has too few observations.
 
+---
+
 **6. Normalization**
 
-Uses
+**uses**
 ---
 MinMaxScaler
+---
 
-which scales every feature into
+**which scales every feature into**
 ---
 0 → 1
+---
 
 This is especially beneficial for SVM.
 
