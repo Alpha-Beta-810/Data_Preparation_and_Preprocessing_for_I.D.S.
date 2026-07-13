@@ -35,6 +35,8 @@ The system preprocesses raw network data, handles class imbalance using **SMOTE*
 - 🚀 Clean and beginner-friendly implementation
 - 💻 Built entirely in Python
 
+---
+
 ## 🧠 Machine Learning Pipeline
 
 **1. Dataset Loading**
